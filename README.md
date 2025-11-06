@@ -56,7 +56,7 @@ You can now try Komunitin at [http://localhost:2030](http://localhost:2030) with
 The public deployment uses the [Traefik](https://traefik.io) reverse proxy to forward the traffic to the different services. The proxy is provided separately because its configuration may vary depending on the server setup. You need to start the reverse proxy first with:
 
 ```bash
-docker compose -f docker-compose.proxy.yml up -d
+docker compose -f compose.proxy.yml up -d
 ```
 Then you should to add the flag `--public` to the start script. For example:
 
